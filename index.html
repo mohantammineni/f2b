@@ -35,31 +35,73 @@
                 <marquee>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</marquee>
             </div>
             <div class="row-fluid background-color-black">
-            	<div class="span1 links-seperators"><a class="margin-left5" href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
-                <div class="span1 links-seperators"><a href="">Home</a></div>
+            	<div class="span1 links-seperators font-color-black"><a class="margin-left5" href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
+                <div class="span1 links-seperators font-color-black"><a href="">Home</a></div>
             </div>
 
             <!-- Example row of columns -->
             <div class="row-fluid">
-               <div class="span2"></div>
-               <div class="span8">
-               		<img alt="lorempixum" src="./img/boy.png" id="rotator">
+               <div class="span2">
+               	<img style="height: 315px;" src='./img/images.jpg'>
                </div>
-               <div class="span2"></div>
+               <div class="span8 image-width margin-left0">
+               		<img style="height: 315px;" alt="lorempixum" src="./img/banner.jpg" id="rotator">
+               </div>
+               <div class="span2 margin-left0 right-image-width">
+               	<img style="height: 315px;" src='./img/images.jpg'>
+               </div>
             </div>
-
-            <hr>
-
+           <div class="row-fluid margin-top100">
+				<div class="span4">
+					<div class="card">
+						<h6 class="align-center">This Is Awesome.<img src="img/new.gif"></h6>
+						<p>This is awesome.This is awesome.This is awesome.This is awesome.This is awesome.This is awesome.</p>
+					</div>
+					<div class="row-fluid margin-top5">
+						 <div class="span6 border-colored">
+						 	<h5 class="align-center">madhan</h5>
+						 	<img style="width:144px;height: 144px;" src="./img/s1.jpg"/>
+						 	<p class="padding-left5">Awesome Awesome Awesome Awesome</p>
+						 </div>
+						 <div class="span6 border-colored">
+						 	<h5 class="align-center">madhan</h5>
+						 	<img style="width:144px;height: 144px;" src="./img/k1.jpg"/>
+						 	<p class="padding-left5">Awesome Awesome Awesome Awesome</p>
+						 </div>
+						 
+					</div>
+				</div>
+				<div class="span4">
+					<div class="card">
+						<h6 class="align-center">This Is Awesome.</h6>
+						<p>This is awesome.This is awesome.This is awesome.This is awesome.This is awesome.This is awesome.</p>
+					</div>
+					<img class="margin-top5"  alt="lorempixum" src="./img/small1.jpg" id="smallImages">
+				</div>
+				<div class="span4">
+					<div class="card">
+						<h6 class="align-center">This Is Awesome.</h6>
+						<p>This is awesome.This is awesome.This is awesome.This is awesome.This is awesome.This is awesome.</p>
+					</div>
+					<div class="pagination">
+					  <ul>
+					    <li><a href="#">Prev</a></li>
+					    <li><a href="#"><iframe  src="http://www.youtube.com/embed/QJK1x4KekZw" frameborder="0" id="videoRotatr" allowfullscreen></iframe></a></li>
+					    <li><a href="#">Next</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
             <footer>
                 <p>&copy; Company 2012</p>
             </footer>
@@ -89,7 +131,30 @@
 				var delayInSeconds = 5;
 				// set number of seconds delay
 				// list image names
-				var images = ['boy.png', 'dsk.png', 'phone.png'];
+				var images = ['banner2.jpg', 'banner3.jpg'];
+				// don't change below this line
+				var num = 0;
+				var changeImage = function() {
+					var len = images.length;
+					rotator.src = imageDir + images[num++];
+					if (num == len) {
+						num = 0;
+					}
+				};
+				setInterval(changeImage, delayInSeconds * 1000);
+			})();
+		</script>
+		<script type="text/javascript">
+			(function() {
+
+				var rotator = document.getElementById('smallImages');
+				// change to match image ID
+				var imageDir = './img/';
+				// change to match images folder
+				var delayInSeconds = 5;
+				// set number of seconds delay
+				// list image names
+				var images = ['small2.jpg', 'small3.jpg'];
 				// don't change below this line
 				var num = 0;
 				var changeImage = function() {
