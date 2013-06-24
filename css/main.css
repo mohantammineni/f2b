@@ -34,14 +34,29 @@ width:70% !important;
 	overflow: hidden;
 	padding: 4px;
 }
+.margin-movie{
+box-shadow: 2px 1px 15px 0px #666;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 4px;	
+	margin-top: 0px;
+}
 .align-center{
 	text-align:center;
 }
 .text-justify{
 	text-align: justify;
 }
+.margin-img100{
+	margin-top: 0px;
+	border: 2px solid rgb(196, 21, 21);
+border-radius:6px;
+.p{
+	text-align: justify;
+}
+}
 .margin-top100{
-	margin-top:100px;
+	margin-top:0px;
 }
 .pagination ul>li>a, .pagination ul>li>span{
 	padding:0px;
