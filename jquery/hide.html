@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+$("p").click(function()
+{
+$(this).hide();
+});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#test").hide();
+	});
+});
+</script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("p.post").hide();
+	});
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("*").hide();
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("p").mouseenter(function(){
+		alert("you enterd");
+	});
+});
+</script>
+</head>
+<body>
+<p id="po">Hello welcome to world</p>
+<p id="test">hi hello</p>
+<p class="post">i am indian</p>
+<p>mahesh</p>
+<button>Click Me</button>
+</body>
+</html>
