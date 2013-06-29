@@ -155,7 +155,7 @@ include("marquee.html");
 				<div class="span4">
 					<div class="card">
 						<h6 class="align-center">Sports News.<img src="img/new.gif"></h6>
-						<p>This is awesome.This is awesome.This is awesome.This is awesome.This is awesome.This is awesome.</p>
+						<p><a href="http://full2bindasss.blogspot.com/2013/06/manabalam.html">ఈ రోజుల్లో సాయం చేయడం అన్నా ...</a></p>
 					</div>
 					<div class="row-fluid margin-top5">
 						 <div class="span6 border-colored">
